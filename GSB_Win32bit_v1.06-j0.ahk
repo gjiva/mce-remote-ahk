@@ -66,6 +66,6 @@ return
 #IfWinActive, Windows Media Center
 ; fixes for MCE remote to pass the right hotkeys
 s::WinClose  ; s is the power button on the MCE remote
-c::Send ^g
+c::Send ^g ;c is the guide button on the MCE remote and ctrl-g is the guide hotkey
 #!Enter::Send !{Enter}  ;make green button toggle full screen
 #IfWinActive
