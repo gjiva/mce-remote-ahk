@@ -69,3 +69,8 @@ s::WinClose  ; s is the power button on the MCE remote
 c::Send ^g ;c is the guide button on the MCE remote and ctrl-g is the guide hotkey
 #!Enter::Send !{Enter}  ;make green button toggle full screen
 #IfWinActive
+
+#IfWinActive, Plex Home Theater
+; fixes for MCE remote to pass the right hotkeys
+^l::Send \  ; backslash toggles full screen in Plex and XBMC and the green button has been mapped to ctrl-l 
+#IfWinActive
